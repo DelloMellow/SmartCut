@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".ui.PredictActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_gray"
+        tools:context=".ui.PredictActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hair_style_rec"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:textAlignment="textStart"
+            android:layout_marginTop="15dp"
+            android:layout_above="@+id/recyclerView"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_above="@id/btn_find_barber"
+            android:layout_marginBottom="30dp"
+            tools:listitem="@layout/item_recommendation" />
+
+        <Button
+            android:id="@+id/btn_find_barber"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/cream"
+            android:text="@string/find_barber"
+            android:textColor="@color/black"
+            android:layout_marginBottom="70dp"
+            android:layout_alignParentBottom="true"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</ScrollView>

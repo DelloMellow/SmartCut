@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingDefaultResource">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/hairstyle"
+        android:icon="@drawable/icon_hairstyle"
+        android:title="@string/hair_style" />
+
+    <item
+        android:id="@+id/placeholder"
+        android:title=""
+        />
+    <item
+        android:id="@+id/barber"
+        android:icon="@drawable/icon_map"
+        android:title="@string/barber" />
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_profile"
+        android:title="@string/profile" />
+</menu>
